@@ -17,11 +17,16 @@ struct LibraryView: View {
                         ForEach(0 ..< listElement.count) { element in
                             HStack {
                                 if self.isEditing {
-                                    Image(systemName: "checkmark.circle.fill")
-                                        .background(Color.green)
-                                        .font(.system(size: 22))
-                                        .foregroundColor(Color.init(#colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1)))
-                                        .offset(x: -40)
+                                    ZStack {
+                                        Image(systemName: "circle.fill")
+                                            .font(.system(size: 22))
+                                            .foregroundColor(Color.init(#colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1)))
+                                            .offset(x: -40)
+                                        Image(systemName: "checkmark")
+                                            .font(.system(size: 11, weight: Font.Weight.bold))
+                                            .foregroundColor(.white)
+                                            .offset(x: -40)
+                                    }
                                 }
                                 NavigationLink(destination: Text("123")) {
                                     Text(self.listElement[element])

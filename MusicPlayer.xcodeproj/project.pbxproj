@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B527F5A924260766008C2A5F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527F5A824260766008C2A5F /* GridView.swift */; };
+		B52C2F082426DE1700661705 /* LibraryIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C2F072426DE1700661705 /* LibraryIconView.swift */; };
 		B572945224252AC50003AC10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572945124252AC50003AC10 /* AppDelegate.swift */; };
 		B572945424252AC50003AC10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572945324252AC50003AC10 /* SceneDelegate.swift */; };
 		B572945624252AC50003AC10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572945524252AC50003AC10 /* ContentView.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		B527F5A824260766008C2A5F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		B52C2F072426DE1700661705 /* LibraryIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryIconView.swift; sourceTree = "<group>"; };
 		B572944E24252AC50003AC10 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572945124252AC50003AC10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B572945324252AC50003AC10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B572945124252AC50003AC10 /* AppDelegate.swift */,
 				B572945324252AC50003AC10 /* SceneDelegate.swift */,
 				B572945524252AC50003AC10 /* ContentView.swift */,
+				B52C2F072426DE1700661705 /* LibraryIconView.swift */,
 				B572948724255DCC0003AC10 /* AlbumCoverView.swift */,
 				B5729489242560230003AC10 /* AlbumModel.swift */,
 				B572948324252D300003AC10 /* RecommendationView.swift */,
@@ -290,6 +293,7 @@
 				B572948424252D300003AC10 /* RecommendationView.swift in Sources */,
 				B572945424252AC50003AC10 /* SceneDelegate.swift in Sources */,
 				B572948624252DDF0003AC10 /* BrowseView.swift in Sources */,
+				B52C2F082426DE1700661705 /* LibraryIconView.swift in Sources */,
 				B572948A242560230003AC10 /* AlbumModel.swift in Sources */,
 				B572945624252AC50003AC10 /* ContentView.swift in Sources */,
 				B527F5A924260766008C2A5F /* GridView.swift in Sources */,
