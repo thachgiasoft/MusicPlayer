@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B527F5A924260766008C2A5F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527F5A824260766008C2A5F /* GridView.swift */; };
 		B572945224252AC50003AC10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572945124252AC50003AC10 /* AppDelegate.swift */; };
 		B572945424252AC50003AC10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572945324252AC50003AC10 /* SceneDelegate.swift */; };
 		B572945624252AC50003AC10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572945524252AC50003AC10 /* ContentView.swift */; };
@@ -18,6 +19,8 @@
 		B572948224252CD10003AC10 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572948124252CD10003AC10 /* LibraryView.swift */; };
 		B572948424252D300003AC10 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572948324252D300003AC10 /* RecommendationView.swift */; };
 		B572948624252DDF0003AC10 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572948524252DDF0003AC10 /* BrowseView.swift */; };
+		B572948824255DCC0003AC10 /* AlbumCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572948724255DCC0003AC10 /* AlbumCoverView.swift */; };
+		B572948A242560230003AC10 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5729489242560230003AC10 /* AlbumModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B527F5A824260766008C2A5F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		B572944E24252AC50003AC10 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572945124252AC50003AC10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B572945324252AC50003AC10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		B572948124252CD10003AC10 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		B572948324252D300003AC10 /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 		B572948524252DDF0003AC10 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		B572948724255DCC0003AC10 /* AlbumCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCoverView.swift; sourceTree = "<group>"; };
+		B5729489242560230003AC10 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +114,12 @@
 				B572945124252AC50003AC10 /* AppDelegate.swift */,
 				B572945324252AC50003AC10 /* SceneDelegate.swift */,
 				B572945524252AC50003AC10 /* ContentView.swift */,
+				B572948724255DCC0003AC10 /* AlbumCoverView.swift */,
+				B5729489242560230003AC10 /* AlbumModel.swift */,
 				B572948324252D300003AC10 /* RecommendationView.swift */,
 				B572948524252DDF0003AC10 /* BrowseView.swift */,
 				B572948124252CD10003AC10 /* LibraryView.swift */,
+				B527F5A824260766008C2A5F /* GridView.swift */,
 				B572945724252AC80003AC10 /* Assets.xcassets */,
 				B572945C24252AC80003AC10 /* LaunchScreen.storyboard */,
 				B572945F24252AC80003AC10 /* Info.plist */,
@@ -281,7 +290,10 @@
 				B572948424252D300003AC10 /* RecommendationView.swift in Sources */,
 				B572945424252AC50003AC10 /* SceneDelegate.swift in Sources */,
 				B572948624252DDF0003AC10 /* BrowseView.swift in Sources */,
+				B572948A242560230003AC10 /* AlbumModel.swift in Sources */,
 				B572945624252AC50003AC10 /* ContentView.swift in Sources */,
+				B527F5A924260766008C2A5F /* GridView.swift in Sources */,
+				B572948824255DCC0003AC10 /* AlbumCoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

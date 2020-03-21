@@ -1,11 +1,3 @@
-//
-//  BrowseView.swift
-//  MusicPlayer
-//
-//  Created by Максим on 20.03.2020.
-//  Copyright © 2020 Максим. All rights reserved.
-//
-
 import SwiftUI
 
 struct BrowseView: View {
@@ -13,7 +5,7 @@ struct BrowseView: View {
         NavigationView {
             Text("")
                 
-            .navigationBarTitle("Browse")
+            .navigationBarTitle("Обзор")
         }
     }
 }

@@ -1,36 +1,46 @@
-//
-//  ContentView.swift
-//  MusicPlayer
-//
-//  Created by Максим on 20.03.2020.
-//  Copyright © 2020 Максим. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-var body: some View {
-        TabView {
-            LibraryView()
+    var body: some View {
+            TabView {
+                LibraryView()
+                    .tabItem {
+                        Image(systemName: "music.note.list")
+                            .font(.system(size: 24, weight: Font.Weight.medium))
+                        Text("Медиатека")
+                    }
+                
+                RecommendationView()
+                    .tabItem {
+                        Image(systemName: "heart.fill")
+                            .font(.system(size: 24, weight: Font.Weight.medium))
+                        Text("Для вас")
+                    }
+                
+                BrowseView()
+                    .tabItem {
+                        Image(systemName: "music.note")
+                            .font(.system(size: 24, weight: Font.Weight.medium))
+                        Text("Обзор")
+                    }
+                
+                BrowseView()
                 .tabItem {
-                    Image(systemName: "music.note.list")
-                    Text("Library")
+                    Image(systemName: "dot.radiowaves.left.and.right")
+                        .font(.system(size: 24, weight: Font.Weight.medium))
+                    Text("Радио")
                 }
-            
-            RecommendationView()
+                
+                BrowseView()
                 .tabItem {
-                    Image(systemName: "heart.fill")
-                    Text("For you")
+                    Image(systemName: "magnifyingglass")
+                        .font(.system(size: 24, weight: Font.Weight.medium))
+                    Text("Поиск")
                 }
-            
-            BrowseView()
-                .tabItem {
-                    Image(systemName: "tv.music.note")
-                    Text("Browse")
-                }
+            }
+            .accentColor(Color.init(#colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1)))
+            .edgesIgnoringSafeArea(.top)
         }
-        .accentColor(Color.init(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {

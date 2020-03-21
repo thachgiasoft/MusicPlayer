@@ -1,11 +1,3 @@
-//
-//  RecommendationView.swift
-//  MusicPlayer
-//
-//  Created by Максим on 20.03.2020.
-//  Copyright © 2020 Максим. All rights reserved.
-//
-
 import SwiftUI
 
 struct RecommendationView: View {
@@ -13,7 +5,7 @@ struct RecommendationView: View {
         NavigationView {
             Text("")
                 
-            .navigationBarTitle("For you")
+            .navigationBarTitle("Для вас")
         }
     }
 }
