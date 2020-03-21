@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LibraryView: View {
     @State private var listElement = ["Плейлисты", "Артисты", "Альбомы", "Песни", "Загруженная музыка"]
-    @State private var isDisplay = false
+    @State private var isEditing = false
     
     func move(from source: IndexSet, to destination: Int) {
         listElement.move(fromOffsets: source, toOffset: destination)
@@ -16,7 +16,7 @@ struct LibraryView: View {
                     List {
                         ForEach(0 ..< listElement.count) { element in
                             HStack {
-                                if self.isDisplay {
+                                if self.isEditing {
                                     Image(systemName: "checkmark.circle.fill")
                                         .background(Color.green)
                                         .font(.system(size: 22))
@@ -27,7 +27,7 @@ struct LibraryView: View {
                                     Text(self.listElement[element])
                                         .foregroundColor(Color.init(#colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1)))
                                         .font(.system(size: 22))
-                                        .offset(x: self.isDisplay ? -30 : 0)
+                                        .offset(x: self.isEditing ? -30 : 0)
                                 }
                                 .padding(.top, 7)
                                 .padding(.bottom, 7)
@@ -39,7 +39,7 @@ struct LibraryView: View {
                         
                     .frame(height: 270)
                     
-                    if !isDisplay {
+                    if !isEditing {
                         Text("Недавно добавленные")
                             .font(.system(size: 22)).bold()
                             .padding(.top, 10)
@@ -58,10 +58,10 @@ struct LibraryView: View {
                 .navigationBarItems(trailing:EditButton()
                 .simultaneousGesture(TapGesture().onEnded {
                     withAnimation {
-                        self.isDisplay.toggle()
+                        self.isEditing.toggle()
                     }
-                })
-                    .accentColor(Color.init(#colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1))))
+                }).accentColor(Color.init(#colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1))))
+                    .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive))
                     .navigationBarTitle("Медиатека")
             }
         }
